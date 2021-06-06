@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nbp.pl/api/exchangerates/rates/a/EUR/2021-06-08?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nbp.pl
+  response:
+    status:
+      code: 400
+      message: !binary |-
+        QrPqZG55IHpha3JlcyBkYXQgLyBJbnZhbGlkIGRhdGUgcmFuZ2U=
+    headers:
+      Date:
+      - Sun, 06 Jun 2021 10:26:19 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '57'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ee3la5eizeiY4Eix=iePaevi0; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        NDAwIEJhZFJlcXVlc3QgLSBCxYLEmWRueSB6YWtyZXMgZGF0IC8gSW52YWxpZCBkYXRlIHJhbmdl
+  recorded_at: Sun, 06 Jun 2021 10:26:20 GMT
+recorded_with: VCR 6.0.0

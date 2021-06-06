@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nbp.pl/api/exchangerates/rates/a/USD/2021-06-06?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nbp.pl
+  response:
+    status:
+      code: 404
+      message: Not Found - Brak danych
+    headers:
+      Date:
+      - Sun, 06 Jun 2021 11:08:30 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '38'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ee3la5eizeiY4Eix=iePaevi0; path=/
+    body:
+      encoding: UTF-8
+      string: 404 NotFound - Not Found - Brak danych
+  recorded_at: Sun, 06 Jun 2021 11:08:29 GMT
+- request:
+    method: get
+    uri: http://api.nbp.pl/api/exchangerates/rates/a/USD/2021-06-05?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nbp.pl
+  response:
+    status:
+      code: 404
+      message: Not Found - Brak danych
+    headers:
+      Date:
+      - Sun, 06 Jun 2021 11:08:30 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '38'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ee3la5eizeiY4Eix=Naew5Ohp; path=/
+    body:
+      encoding: UTF-8
+      string: 404 NotFound - Not Found - Brak danych
+  recorded_at: Sun, 06 Jun 2021 11:08:29 GMT
+- request:
+    method: get
+    uri: http://api.nbp.pl/api/exchangerates/rates/a/USD/2021-06-04?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.nbp.pl
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Jun 2021 11:08:29 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Etag:
+      - '"+/l91iuNqONjHTHtn9Ia638Afj6O5HR2Wt8xfn7mGZo="'
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - ee3la5eizeiY4Eix=ud5ahSho; path=/
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0YWJsZSI6IkEiLCJjdXJyZW5jeSI6ImRvbGFyIGFtZXJ5a2HFhHNraSIsImNvZGUiOiJVU0QiLCJyYXRlcyI6W3sibm8iOiIxMDYvQS9OQlAvMjAyMSIsImVmZmVjdGl2ZURhdGUiOiIyMDIxLTA2LTA0IiwibWlkIjozLjY5MzF9XX0=
+  recorded_at: Sun, 06 Jun 2021 11:08:29 GMT
+recorded_with: VCR 6.0.0
