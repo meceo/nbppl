@@ -1,8 +1,6 @@
 # Nbppl
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nbppl`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Simple API client to fetch exchange rate to PLN for selected currency and date from http://api.nbp.pl
 
 ## Installation
 
@@ -22,7 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# fetch mid rate for specific currency and date
+Nbppl::Client.new.fetch_mid_rate("EUR", Date.parse("2021-06-01"))
+
+# fetch mid rate from closest date in the past
+Nbppl::Client.new.closest_mid_rate("USD", Date.parse("2021-06-06"))
+=> [3.6931, #<Date: 2021-06-04 ((2459370j,0s,0n),+0s,2299161j)>]
+
+# use caching by making multiple calls with same class instance
+client = Nbppl::Client.new
+client.fetch_mid_rate(a)
+client.fetch_mid_rate(a) # no unnecessary api call
+# or by using Nbppl::Client.current
+Nbppl::Client.current.fetch_mid_rate(a)
+Nbppl::Client.current.fetch_mid_rate(a) # no unnecessary api call
+```
 
 ## Development
 
@@ -32,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nbppl.
+Bug reports and pull requests are welcome on GitHub at https://github.com/meceo/nbppl.
 
 ## License
 

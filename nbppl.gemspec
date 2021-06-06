@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["meceo00@gmail.com"]
 
   spec.summary       = %q{Simple API client for NBP PL exchange rate service}
-  spec.description   = %q{Provides simple API client to fetch exchange rates for selected date from http://api.nbp.pl}
+  spec.description   = %q{Provides simple API client to fetch exchange rate to PLN for selected currency and date from http://api.nbp.pl}
   spec.homepage      = "http://github.com/meceo/nbppl"
   spec.license       = "MIT"
 

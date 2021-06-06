@@ -36,7 +36,7 @@ DEPENDENCIES
   pry (~> 0.14)
   rake (~> 10.0)
   vcr (~> 6.0)
-  webmock
+  webmock (~> 3.13)
 
 BUNDLED WITH
    2.2.4
